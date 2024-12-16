@@ -1,7 +1,15 @@
 import React from "react";
-
+import { Outlet } from "react-router-dom";
+import Header from "./components/navBar";
+import Footer from "./components/footer";
 const App = () => {
-  return <h1 className="text-95  l text-red-600">hallo zia shahab</h1>;
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  );
 };
 
 export default App;
